@@ -1,15 +1,42 @@
 @font-stack:    Helvetica, sans-serif;
 @primary-color: darkblue;
 @background-color : beige;
+html {
+  background-color:white;
+}
 body {
   max-width: 800px;
     margin: 0px auto;
     background-color: @background-color;
     border-color: black; 
+    min-height: 100vh;
     
 }
 .title {
   font: 100% @font-stack;
   color: @primary-color;
   text-align: center; 
+}
+
+.frame {
+  border: solid 0.5pt black;
+  box-shadow: 2px 2px #888888;
+  
+}
+.primary_title {
+  font-size: 160%;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+}
+.participants {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  &>:first-child {
+    border: solid 1px;
+    min-height: 40pt;
+    min-width: 10rem;
+    margin-right: 1rem;
+  }
 }

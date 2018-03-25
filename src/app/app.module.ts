@@ -6,12 +6,14 @@ import { ParticipantInfo} from './parti-info.service';
 import { DojoRepresentativeComponent } from './dojo-representative/dojo-representative.component';
 import { ParticipantListComponent } from './participant-list/participant-list.component';
 import { RegkenconfigService} from './regkenconfig.service';
+import { ParticipantFormComponent } from './participant-form/participant-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DojoRepresentativeComponent,
-    ParticipantListComponent
+    ParticipantListComponent,
+    ParticipantFormComponent
   ],
   imports: [
     BrowserModule

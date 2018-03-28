@@ -4,11 +4,12 @@ import { Participant } from './participant.class';
 export class ParticipantInfo {
 
   //participant list
-  plist: Array<string>;
+  plist: Array<Participant>;
   currentParticipant : Participant;
 
     constructor() {
-      this.plist = new Array<string>();
+      this.plist = new Array<Participant>();
+      this.currentParticipant = null;
     }
   public title() : String {
 

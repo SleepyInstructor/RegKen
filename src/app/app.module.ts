@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule }   from '@angular/forms';
+
 
 import { AppComponent } from './app.component';
 import { ParticipantInfo} from './parti-info.service';
@@ -13,7 +15,8 @@ import { ParticipantFormComponent } from './participant-form/participant-form.co
     AppComponent,
     DojoRepresentativeComponent,
     ParticipantListComponent,
-    ParticipantFormComponent
+    ParticipantFormComponent,
+    FormsModule
   ],
   imports: [
     BrowserModule

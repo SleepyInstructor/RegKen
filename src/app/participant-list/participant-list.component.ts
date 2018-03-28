@@ -12,8 +12,7 @@ const defaultName:String = "Participant";
 
 export class ParticipantListComponent implements OnInit {
 
-  testlist: Array<Participant> = [];
-  constructor() {
+  constructor(private partiInfo: ParticipantInfo ) {
 
   }
 
@@ -21,7 +20,11 @@ export class ParticipantListComponent implements OnInit {
   }
   
   addParticipant(): void {
-      this.testlist.push(new Participant( defaultName,this.testlist.length.toString() ));
+      let newPart : Participant = new Participant( defaultName,this.partiInfo.plist.length.toString() );
+      this.partiInfo.plist.push(newPart);
+      this.partiInfo.currentParticipant = newPart;
   }
-
+  select(currentParticipant : any) : void {
+      this.partiInfo.currentParticipant = currentParticipant;   
+  }
 }

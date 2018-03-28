@@ -12,5 +12,8 @@ export class ParticipantFormComponent implements OnInit {
   ngOnInit() {
   }
 
+  changed(){
+    console.log("Stuff happened");
+  }
 }
  

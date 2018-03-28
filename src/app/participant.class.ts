@@ -10,9 +10,9 @@ export class Participant {
     firstName: String = "";
     lastName: String = "";
     rank: String = "";
-    Age: Number = 0;
-    Category: String = "";
-    Gender: String = "";
+    age: Number = 0;
+    category: String = "";
+    gender: String = "";
     constructor(initialFirstName : String, initialLastName){
         this.firstName = initialFirstName;
         this.lastName = initialLastName;

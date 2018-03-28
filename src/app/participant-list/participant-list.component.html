@@ -3,7 +3,7 @@
     <span>Entrants</span>
     <input type="button" value="Add" (click)="addParticipant()">
     <div class="mainlist">
-     <div *ngFor="let num of testlist">
+     <div *ngFor="let num of partiInfo.plist">
           <div class="participant" (click)="select(num)"> {{num.firstName}} {{num.lastName}} <span (click)="remove()">X</span></div>
             
      </div>

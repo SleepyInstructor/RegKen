@@ -9,17 +9,21 @@ import { DojoRepresentativeComponent } from './dojo-representative/dojo-represen
 import { ParticipantListComponent } from './participant-list/participant-list.component';
 import { RegkenconfigService} from './regkenconfig.service';
 import { ParticipantFormComponent } from './participant-form/participant-form.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     DojoRepresentativeComponent,
     ParticipantListComponent,
-    ParticipantFormComponent
+    ParticipantFormComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [ParticipantInfo, RegkenconfigService ],
   bootstrap: [AppComponent]

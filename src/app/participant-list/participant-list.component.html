@@ -1,12 +1,10 @@
+<div class="webButton" href="" (click)="addParticipant(event)"> Add Entrant </div>
+<div class="mainlist">
+  <table class="participantlist">
+    <tr *ngFor="let num of partiInfo.plist">
+      <td class="remove {{num==partiInfo.currentParticipant?'selected':'notselected'}}" (click)="remove(num)">X</td>
+      <td class="participant {{num==partiInfo.currentParticipant?'selected':'notselected'}}" (click)="select(num)"> {{num.firstName}} {{num.lastName}}</td>
 
-  
-    <div class="webButton" href="" (click)="addParticipant(event)"> Add Entrant </div>
-    <div class="mainlist">
-      <table class="participantlist">
-     <tr *ngFor="let num of partiInfo.plist">
-                     
-      <td class="participant {{num==partiInfo.currentParticipant?'selected':'notselected'}}"  (click)="select(num)"> {{num.firstName}} {{num.lastName}}</td>
-      
-     </tr>
-    </table>
-  </div>
+    </tr>
+  </table>
+</div>

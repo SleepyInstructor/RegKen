@@ -27,4 +27,15 @@ export class ParticipantListComponent implements OnInit {
   select(currentParticipant : any) : void {
       this.partiInfo.currentParticipant = currentParticipant;   
   }
+  remove(currentParticipant: any) : void {
+    console.log("remove")
+    let index  = this.partiInfo.plist.indexOf(currentParticipant);
+    this.partiInfo.plist.splice(index,1);
+    let newLength = this.partiInfo.plist.length;
+    if(newLength == 0){
+      this.partiInfo.currentParticipant = null;
+    } else {
+      this.partiInfo.currentParticipant = this.partiInfo.plist[Math.min(index,newLength-1)];
+    }
+  }
 }

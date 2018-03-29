@@ -10,7 +10,7 @@ export class ParticipantInfo {
     constructor() {
       this.plist = new Array<Participant>();
       this.currentParticipant = null;
-      this.rep = new DojoRep("Rep", "e","","");
+      this.rep = new DojoRep("Rep", "e","","","");
     }
   public title() : String {
 

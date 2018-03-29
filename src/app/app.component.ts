@@ -11,7 +11,7 @@ import { FormsModule }   from '@angular/forms';
 
 export class AppComponent {
   title : String;
-  constructor(private partiInfo: ParticipantInfo, private config: RegkenconfigService){
+  constructor( private config: RegkenconfigService){
      this.title = config.title;
   };
 }

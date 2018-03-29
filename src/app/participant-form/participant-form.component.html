@@ -1,11 +1,12 @@
 <div (keyup)="changed()">
   <form #participantform="ngForm"> <!-- setup two way data binding using forms -->
-    <input type="button" value="Edit"><br> First name: <input type="text" name="" id=""> Last name: <br><input type="text"
-      name="" id=""><br> Rank:
-    <input type="text" name="" id=""><br> Age:
-    <input type="text" name="" id=""><br> Category:
-    <input type="text" name="" id=""><br> Gender:
-    <select>  
+    <br> First name: 
+    <input type="text" [(ngModel)]= "partiInfo.currentParticipant.firstName" name = "firstName"> 
+    Last name: <input type="text" [(ngModel)]= "partiInfo.currentParticipant.lastName" name="lastName"><br> 
+    Rank:<input type="text"  [(ngModel)]= "partiInfo.currentParticipant.rank" name="rankName"><br> Age:
+    <input type="text"  [(ngModel)]= "partiInfo.currentParticipant.age" name="age" ><br> Category:
+    <input type="text" [(ngModel)]= "partiInfo.currentParticipant.category" name="category"><br> Gender:
+    <select [(ngModel)]= "partiInfo.currentParticipant.gender" name="gender">  
      <option value="M">Male</option>
      <option value="F">Female</option>
      <option value="T">Transgender</option>

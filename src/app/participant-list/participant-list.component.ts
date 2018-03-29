@@ -7,7 +7,7 @@ const defaultName:String = "Participant";
 @Component({
   selector: 'participant-list',
   templateUrl: './participant-list.component.html',
-  styleUrls: ['./participant-list.component.css']
+  styleUrls: ['./participant-list.component.less']
 })
 
 export class ParticipantListComponent implements OnInit {

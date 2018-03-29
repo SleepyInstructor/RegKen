@@ -18,3 +18,9 @@ export class Participant {
         this.lastName = initialLastName;
     }
 }
+export class DojoRep{
+    constructor(
+        public dojoName: string,public firstName : string, public lastName: string,
+        public number : string, public email: string){            
+    }
+}

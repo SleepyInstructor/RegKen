@@ -1,4 +1,22 @@
-<div>
-   <div class="field"><label>Dojo Representative</label><inpt<div class="field">
-   
+<div class="primary_title"> Dojo Information:</div>
+<div class="field">
+    
+    <form #repForm="ngForm" >
+        <div class="field">
+            <label>Dojo Name: </label>
+            <input type="text" name="dojoName" [(ngModel)]="partiInfo.rep.dojoName"> 
+        </div>
+        <div class="field">
+            <label>Dojo Representative Name: </label>
+            <input type="text" name="repName" [(ngModel)] = "partiInfo.rep.firstName"> 
+        </div>
+        <div>
+            <label>Contact Phone Number: </label>
+            <input type="text" name="phonenumber" [(ngModel)] = "partiInfo.rep.number">
+        </div>
+        <div>
+            <label>Contact E-mail: </label>
+            <input type="text" name="email" [(ngModel)] = "partiInfo.rep.email">
+        </div>
+    </form>
 </div>

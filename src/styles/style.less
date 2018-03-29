@@ -1,23 +1,28 @@
-@font-stack: Helvetica,
-sans-serif;
+@font-stack: Helvetica, sans-serif;
 @primary-color: darkblue;
 @background-color : beige;
+@border-radius : 1rem;
+@heading-size : 160%;
 html {
-    background-color: white;
+    background-color:@background-color;
 }
 
 body {
     max-width: 800px;
     margin: 0px auto;
-    background-color: @background-color;
+    background-color: white;
     border-color: black;
     min-height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .title {
-    font: 100% @font-stack;
+    border-top-left-radius: @border-radius;
+    border-top-right-radius: @border-radius;
+    font: 250% @font-stack;
     color: @primary-color;
     text-align: center;
+    background-color: steelblue;
 }
 
 .frame {
@@ -26,9 +31,13 @@ body {
 }
 
 .primary_title {
-    font-size: 160%;
+    font-size: @heading-size;
     font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: @primary-color;
+}
+.secondary_title {    
+    font-weight: bold;
+    color: @primary-color;
 }
 
 .participants {
@@ -41,9 +50,14 @@ body {
         min-width: 10rem;
         margin-right: 0.5rem;
     }
+
+    .mainlist {
+        height: 12rem;
+        overflow: hidden;
+        &:hover{
+            overflow-y: scroll;
+        }    
+    }
+    
 }
 
-.mainlist {
-    height: 12rem;
-    overflow-y: scroll;
-}

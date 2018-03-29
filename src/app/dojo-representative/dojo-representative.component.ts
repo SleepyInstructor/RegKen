@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ParticipantInfo} from '../parti-info.service';
 
 @Component({
   selector: 'dojo-representative',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DojoRepresentativeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private partiInfo: ParticipantInfo ) { }
 
   ngOnInit() {
   }

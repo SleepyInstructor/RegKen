@@ -15,11 +15,11 @@ import { ParticipantFormComponent } from './participant-form/participant-form.co
     AppComponent,
     DojoRepresentativeComponent,
     ParticipantListComponent,
-    ParticipantFormComponent,
-    FormsModule
+    ParticipantFormComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [ParticipantInfo, RegkenconfigService ],
   bootstrap: [AppComponent]

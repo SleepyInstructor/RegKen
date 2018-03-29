@@ -1,10 +1,12 @@
 
   
-    <span>Entrants</span>
-    <input type="button" value="Add" (click)="addParticipant()">
+    <div class="webButton" href="" (click)="addParticipant(event)"> Add Entrant </div>
     <div class="mainlist">
-     <div *ngFor="let num of partiInfo.plist">
-          <div class="participant" (click)="select(num)"> {{num.firstName}} {{num.lastName}} <span (click)="remove()">X</span></div>
-            
-     </div>
+      <table class="participantlist">
+     <tr *ngFor="let num of partiInfo.plist">
+                     
+      <td class="participant {{num==partiInfo.currentParticipant?'selected':'notselected'}}"  (click)="select(num)"> {{num.firstName}} {{num.lastName}}</td>
+      
+     </tr>
+    </table>
   </div>

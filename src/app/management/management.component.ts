@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {DatabaseService} from '../database.service';
 
 @Component({
   selector: 'app-management',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ManagementComponent implements OnInit {
 
-  constructor() { }
+  constructor(private db : DatabaseService) { 
+    
+  }
 
   ngOnInit() {
   }

@@ -61,3 +61,20 @@ body {
     
 }
 
+@buttonBackground : lightblue;
+.webButton,
+.webButton:visited {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: lighten(@buttonBackground, 5%);
+    margin: 2px;
+    border-radius: .15rem;
+    text-decoration: none;
+    user-select: none;
+    &:hover {
+        background: @buttonBackground;
+    }
+    &:active {
+        background: darken(@buttonBackground, 20%);
+    }
+}

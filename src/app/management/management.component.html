@@ -1,3 +1,11 @@
-<p>
-  management works!
-</p>
+<div class="management">
+
+  Teams
+  <div class="teams">
+    <div class="team" *ngFor="let team of db.getTeams()" click="select(team)">
+      {{team}}
+    </div>
+  </div>
+  <div class="teamInfo"></div>
+  <div class="participantTable"></div>
+</div>
